@@ -1,4 +1,5 @@
 class Movie
+  extend Netflix
   attr_accessor :title
 
   ALL = []
@@ -17,7 +18,7 @@ class Movie
   end
   ########################################################
   def ratings
-    Ratings.all.select { |rating| rating.movie == self }
+    Rating.all.select { |rating| rating.movie == self }
   end
 
   def viewers
