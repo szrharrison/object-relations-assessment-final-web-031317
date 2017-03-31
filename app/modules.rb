@@ -1,5 +1,5 @@
 module Netflix
-  ALL = []
+
   def all
     ALL
   end

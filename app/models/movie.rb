@@ -9,14 +9,6 @@ class Movie
     self.class.all << self
   end
   ########################################################
-  def self.all
-    ALL
-  end
-
-  def self.find_by_title( title )
-    self.all.find { |movie| movie.title == title }
-  end
-  ########################################################
   def ratings
     Rating.all.select { |rating| rating.movie == self }
   end
